@@ -1,17 +1,3 @@
-
-
-.PHONY: build
-build:
-	CGO_ENABLED=0 go build ./cmd/traitor
-
-.PHONY: pack
-pack:
-	go run ./cmd/pack
-
-.PHONY: install
-install:
-	CGO_ENABLED=0 go install -ldflags "-X github.com/liamg/traitor/version.Version=`git describe --tags`" ./cmd/traitor
-
-.PHONY: test
-test:
-	go test ./... -race -cover
+# Диссоциати́вная фуга (от лат. fuga — «бегство») — редкое диссоциативное психическое расстройство, 
+# характеризующееся внезапным, но целенаправленным переездом в незнакомое место, 
+# после чего человек полностью забывает всю информацию о себе, вплоть до имени.
